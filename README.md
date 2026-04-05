@@ -2,6 +2,7 @@
 1. [SOC L1 Alert Triage](#soc-l1-alert-triage)
 2. [SOC L1 Alert Reporting](#soc-l1-alert-reporting)
 3. [SOC Workbooks and Lookups](#soc-workbooks-and-lookups)
+4. [SOC Metrics and Objectives](#soc-metrics-and-objectives)
 
 ## SOC L1 Alert Triage
 ### Event and Alerts
@@ -151,3 +152,50 @@ After you finish your triage, you should receive a flag, which is your answer!
 3. What flag did you receive after completing the third workbook?
 
     The answer is `THM{asset_inventory_is_essential}`.
+
+
+## SOC Metrics and Objectives
+### Core Metrics
+1. Is zero alerts for one month a good sign for your SOC team? (Yea/Nay)
+
+    The answer is `Nay`.
+
+2. What is the False Positive Rate if only 10 out of 50 alerts appear to be real threats?
+
+    The answer is `80%`.
+
+### Triage Metrics
+1. Imagine a scenario where the SOC team receives a critical alert on Saturday.
+If the team works 8/5, on which day of the week will they acknowledge the alert?
+    
+    The answer is `Monday`.
+
+2. Imagine a scenario where an employee was lured into running data stealer malware.
+  1. The SOC team received the "Connection to Redline Stealer C2" alert after 12 minutes.
+  2. One of the L1 analysts on shift moved the alert to In Progress 10 minutes later.
+  3. After 6 minutes, the alert was escalated to L2, who spent 35 minutes cleaning the malware.
+    Provide the MTTD, MTTA, and MTTR via comma as your answer (e.g. 10,20,30).
+
+    The answer is `12,10,51`.
+
+### Improving Metrics
+1. What is the highest acceptable False Positive Rate for SOC teams?
+
+    The answer is `80%`.
+
+2. Should all SOC roles work together to keep metrics improving? (Yea/Nay)
+
+    The answer is `Yea`.
+
+### Practice Scenario
+1. What flag did you get after completing the first scenario?
+
+    The answer is `THM{mttr:quick_start_but_slow_response}`.
+
+2. What flag did you get after completing the second scenario?
+
+    The answer is `THM{mttd:time_between_attack_and_alert}`.
+
+3. What flag did you get after completing the third scenario?
+
+    The answer is `THM{fpr:the_main_cause_of_l1_burnout}`.
