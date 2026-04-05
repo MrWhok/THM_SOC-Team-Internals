@@ -1,6 +1,7 @@
 ## Table of Contents
 1. [SOC L1 Alert Triage](#soc-l1-alert-triage)
 2. [SOC L1 Alert Reporting](#soc-l1-alert-reporting)
+3. [SOC Workbooks and Lookups](#soc-workbooks-and-lookups)
 
 ## SOC L1 Alert Triage
 ### Event and Alerts
@@ -96,3 +97,57 @@ After you finish your triage, you should receive a flag, which is your answer!
 2. Should you immediately contact your L2 if you think you missed the attack (Yea/Nay)?
 
     The answer is `Yea`.
+
+
+## SOC Workbooks and Lookups
+### Assets and Identities
+1. Looking at the identity inventory, what is the role of R.Lund at the company?
+
+    The answer is `US Financial Adviser`.
+
+2. Checking the asset inventory, what data does the HQ-FINFS-02 server store?
+
+    The answer is `Financial records`.
+
+3. Finally, does the file sharing from the scenario look legitimate and expected? (Yea/Nay)
+
+    The answer is `Yea`.
+
+### Network Diagrams
+1. According to the network diagram, which service is exposed on the TCP/10443 port?
+
+    The answer is `VPN`.
+
+2. Now, which subnet would the server behind 172.16.15.99 IP belong to?
+
+    The answer is `Database Subnet`.
+
+3. Finally, does the scenario look like a True Positive (TP) or False Positive (FP)?
+
+    The answer is `TP`.
+
+### Workbooks Theory
+1. Which SOC role would use workbooks the most (e.g. SOC Manager)?
+
+    The answer is `SOC L1 Analyst`.
+
+2. What is the process of gathering user, host, or IP context using TI and lookups?
+
+    The answer is `Enrichment`.
+
+3. Looking at the workbook example, what platform is used as an identity inventory source?
+
+    The answer is `BambooHR`.
+
+### Workbook Practice
+1. What flag did you receive after completing the first workbook?
+
+    The answer is `THM{the_most_common_soc_workbook}`.
+
+2. What flag did you receive after completing the second workbook?
+
+    The answer is `THM{be_vigilant_with_powershell}`.
+
+3. What flag did you receive after completing the third workbook?
+
+    The answer is `THM{asset_inventory_is_essential}`.
